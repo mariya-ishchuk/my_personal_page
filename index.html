@@ -3,65 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <title>mari</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
 </head>
 <body>
-    <header class="white-blur">
+    <header class="parallax-window" data-parallax="scroll" data-position="top" data-speed="1.2" data-image-src="css/img/mari_home.jpg">
         <div class="header-container clearfix">
             <h2 class="fullname">Mari <span class="surename">Ishchuk</span></h2>
             <nav>
-                <a href="#" class="nav-item">About</a>
-                <a href="#" class="nav-item">Work</a>
-                <a href="#" class="nav-item">Lifestyle</a>
-                <a href="#" class="nav-item">Contact</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#work" class="nav-item" target="_blank">Work</a>
+                <a href="#lifestyle" class="nav-item" target="_blank">Lifestyle</a>
+                <a href="#contacts" class="nav-item">Contact</a>
             </nav>
         </div>
         <div class="front-end-dev">
             <p>front-end<br>developer</p>
         </div>
     </header>
-    <article>
-        <section class="about-me">
-            <h2 class="hi">hi!</h2>
-            <p class="my-story">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-            magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-            quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-            ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-            dolor in hendrerit in vulputate velit esse molestie consequat,
-            vel illum dolore eu feugiat nulla facilisis at vero eros et
-            accumsan et iusto odio dignissim qui blandit praesent luptatum
-            zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-        </section>
-        <section class="work">
-            <div class="workspace"></div>
-        </section>
-        <form action="https://formspree.io/mariya.ishchuk@me.com" method="POST">
-        <div>
-            <label for="name">Your name:</label>
-            <input type="text" id="name" name="guest_name" required/>
+    <section id="about" class="about-me">
+        <h2 class="hi">hi!</h2>
+        <p class="my-story">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+        magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+        quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+        ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+        dolor in hendrerit in vulputate velit esse molestie consequat,
+        vel illum dolore eu feugiat nulla facilisis at vero eros et
+        accumsan et iusto odio dignissim qui blandit praesent luptatum
+        zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+    </section>
+    <section id="work" class="workspace" class="parallax-window" data-parallax="scroll" data-image-src="css/img/workspace.jpg">
+        <div class="work">
+            <p>work</p>
         </div>
-        <div>
-            <label for="email">Your email:</label>
-            <input type="text" id="email" name="guest_email" required/>
+    </section>
+    <section class="projects">
+        <ul class="flex-container">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+        </ul>
+    </section>
+    <section id="lifestyle" class="lifestyle" class="parallax-window" data-parallax="scroll" data-image-src="css/img/climb.jpg">
+        <div class="life">
+            <p>lifestyle</p>
         </div>
-        <div>
-            <label for="msg">Message:</label>
-            <textarea id="msg" name="guest_message" required></textarea>
+    </section>
+    <section class="events">
+        <ul class="flex-container">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+        </ul>
+    </section>
+    <section id="contacts" class="contact-me" class="parallax-window" data-parallax="scroll" data-image-src="css/img/city.jpg">
+        <div class="contacts">
+            <p>contact me</p>
         </div>
-        <div class="button">
-            <button type="submit">Send your message</button>
-        </div>
-    </form>
-    </article>
+    </section>
+    <section class="form">
+        <p>Looking for a project of another type? Send me a little information about what you're looking for and I'll be in touch!</p>
+        <!--<form action="https://formspree.io/mariya.ishchuk@me.com" method="POST">-->
+        <form onsubmit="submitF(event)">
+            <div>
+                <label for="name">Your name:</label>
+                <input type="text" id="name" name="guest_name" required/>
+            </div>
+            <div>
+                <label for="email">Your email:</label>
+                <input type="text" id="email" name="guest_email" required/>
+            </div>
+            <div>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="guest_message" required></textarea>
+            </div>
+            <div class="button">
+                <input type="submit" value="Send your message"/>
+            </div>
+        </form>
+    </section>
+    
     <footer>
         <nav>
-            <a href="https://www.skype.com/en/" class="nav-item"><img src="" alt="skype" title="masha.ishchuk"></a>
-            <a href="https://ua.linkedin.com/in/mariya-ishchuk-632301b7" class="nav-item"><img src="" alt="linkedin"></a>
-            <a href="https://www.facebook.com/mariya.ishchuk" class="nav-item"><img src="" alt="facebook"></a>
-            <a href="https://www.instagram.com/mari_ishchuk/" class="nav-item"><img src="" alt="instagram"></a>
+            <a href="https://www.skype.com/en/" class="nav-item" target="_blank"><img src="" alt="skype" title="masha.ishchuk"></a>
+            <a href="https://ua.linkedin.com/in/mariya-ishchuk-632301b7" class="nav-item" target="_blank"><img src="" alt="linkedin"></a>
+            <a href="https://www.facebook.com/mariya.ishchuk" class="nav-item" target="_blank"><img src="" alt="facebook"></a>
+            <a href="https://www.instagram.com/mari_ishchuk/" class="nav-item" target="_blank"><img src="" alt="instagram"></a>
         </nav>
     </footer>
+    
+    
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
 </body>
 </html>
