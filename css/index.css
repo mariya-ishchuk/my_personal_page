@@ -79,7 +79,7 @@ header .surename {
     font-family: Open Sans Condensed;
     font-size: 35px;
 }
-nav {
+header nav {
     display: list-item;
     float: right;
     list-style-type: none;
@@ -92,7 +92,7 @@ header .nav-item:hover {
     color: #ff3399;
     padding-bottom: 10px;
 }
-a {
+header a {
     text-decoration: none;
     outline: none;
     color: white;
@@ -234,17 +234,29 @@ ul.flex-container {
 }
 .form {
     padding: 20px 100px 0 100px;
+    height: 50%;
+    border: 2px solid gray;
 }
 
 footer {
     background-color: transparent;
     box-sizing: border-box;
-    height: auto;
+    height: 10%;
     margin: 0 auto;
     padding-top: 20px;
     position: relative;
     width: 100%;
     padding: 20px 100px 0 100px;
+    border: 2px solid tomato;
+}
+
+header a {
+    text-decoration: none;
+    outline: none;
+    color: black;
+}
+footer nav {
+    
 }
 /*header:before {*/
 /*    background-image: url("img/mari_home.jpg");*/
