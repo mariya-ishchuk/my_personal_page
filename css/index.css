@@ -241,16 +241,18 @@ ul.flex-container {
 footer {
     background-color: transparent;
     box-sizing: border-box;
-    height: 10%;
+    height: auto;
     margin: 0 auto;
-    padding-top: 20px;
     position: relative;
     width: 100%;
-    padding: 20px 100px 0 100px;
+    padding: 20px 100px;
     border: 2px solid tomato;
+    display: flex;
+    flex-flow: row-wrap;
+    justify-content: space-around;
 }
 
-header a {
+footer a {
     text-decoration: none;
     outline: none;
     color: black;
