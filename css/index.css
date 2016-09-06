@@ -233,9 +233,59 @@ ul.flex-container {
   text-align: center;
 }
 .form {
-    padding: 20px 100px 0 100px;
-    height: 50%;
-    border: 2px solid gray;
+    /*padding: 20px 100px 0 100px;*/
+    /*height: 50%;*/
+    
+    background: tomato;
+    padding: 50px 0;
+}
+.flex-form {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.form * {
+    box-sizing: border-box;
+}
+.flex-outer {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.flex-outer label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.flex-outer label span {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+.flex-outer > label > span {
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+.flex-outer > label > span + * {
+    flex: 1 0 220px;
+}
+.flex-outer label input:not([type='checkbox']),
+.flex-outer label textarea {
+  padding: 15px;
+  border: none;
+}
+.flex-outer button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: #333;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
 }
 
 footer {
@@ -246,7 +296,6 @@ footer {
     position: relative;
     width: 100%;
     padding: 20px 100px;
-    border: 2px solid tomato;
     display: flex;
     flex-flow: row-wrap;
     justify-content: space-around;

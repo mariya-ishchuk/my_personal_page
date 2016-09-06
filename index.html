@@ -63,20 +63,24 @@
         </div>
     </section>
     <section class="form">
+        <div class="flex-form">
         <p>Looking for a project of another type? Send me a little information about what you're looking for and I'll be in touch!</p>
         <p id="thanks"></p>
-        <form >
-            <label for="name">Your name:</label>
-            <input type="text" id="name" required/>
-            <br>
-            <label for="email">Your email:</label>
-            <input type="text" id="email" required/>
-            <br>
-            <label for="message">Message:</label>
-            <textarea id="message" required></textarea>
-            <br>
-            <button id="button">Send</button>
-        </form>
+            <form class="flex-outer">
+                <label for="name"><span>Your name:</span>
+                    <input type="text" id="name" required/>
+                </label>
+                <label for="email"><span>Your email:</span>
+                    <input type="text" id="email" required/>
+                </label>
+                <label for="message"><span>Message:</span>
+                    <textarea id="message" rows="6" required></textarea>
+                </label>
+                <label>
+                    <button id="button">Send</button>
+                </label>
+            </form>
+        </div>
     </section>
     
     <footer>

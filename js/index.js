@@ -35,6 +35,3 @@ $(function() {
   });
 });
 
-$('html, body').animate({
-    scrollTop: $("#elementID").offset().top
-}, 2000);
