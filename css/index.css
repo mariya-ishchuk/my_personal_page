@@ -233,12 +233,15 @@ ul.flex-container {
   text-align: center;
 }
 .form {
-    /*padding: 20px 100px 0 100px;*/
-    /*height: 50%;*/
-    
-    background: tomato;
+    background: none;
+    display: flex;
     padding: 50px 0;
 }
+/*.get-in-touch, #thanks {*/
+/*    margin: 0 auto;*/
+/*    max-width: 1200px;*/
+/*        padding: 20px 100px;*/
+/*}*/
 .flex-form {
     width: 80%;
     max-width: 1200px;
@@ -265,6 +268,12 @@ ul.flex-container {
     letter-spacing: .09em;
     text-transform: uppercase;
 }
+.get-in-touch, #thanks {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .02em;
+    line-height: 130%;
+}
 .flex-outer > label > span {
     flex: 1 0 120px;
     max-width: 220px;
@@ -275,7 +284,8 @@ ul.flex-container {
 .flex-outer label input:not([type='checkbox']),
 .flex-outer label textarea {
   padding: 15px;
-  border: none;
+  border: 1px solid #8c8c8c;
+  background-color: #f2f2f2;
 }
 .flex-outer button {
     margin-left: auto;
@@ -288,6 +298,10 @@ ul.flex-container {
     border-radius: 2px;
 }
 
+#thanks {
+    
+}
+
 footer {
     background-color: transparent;
     box-sizing: border-box;
@@ -295,20 +309,21 @@ footer {
     margin: 0 auto;
     position: relative;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 0;
     display: flex;
     flex-flow: row-wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 footer a {
     text-decoration: none;
     outline: none;
-    color: black;
+    color: #333;
 }
-footer nav {
-    
+footer i:hover {
+    color: #ff3399;
 }
+
 /*header:before {*/
 /*    background-image: url("img/mari_home.jpg");*/
 /*    background-size: cover;*/
