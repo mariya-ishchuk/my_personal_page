@@ -117,7 +117,18 @@ header a {
   top: 50%;
   transform: translateY(-50%);
 }
-
+section.about-me {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 100px 100px 100px 100px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+}
 section .hi {
     font-size: 70px;
     letter-spacing: 6px;
@@ -126,28 +137,14 @@ section .hi {
     font-weight: bold;
     line-height: 100px;
 }
-section.about-me {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: 
-    width: 100%;
-    height: 40%;
-    background-color: white;
-    padding: 20px 100px 0 100px;
+section .my-story {
+    padding-left: 100px;
+    text-align: left;
+    font-weight: 300;
+    letter-spacing: .02em;
+    line-height: 130%;
 }
-/*article {*/
-/*    background-color: transparent;*/
-/*    box-sizing: border-box;*/
-/*    height: 100%;*/
-/*    margin: 0 auto;*/
-/*    position: relative;*/
-/*    width: 100%;*/
-    /*padding: 20px 100px 0 100px;*/
-/*}*/
-
 .workspace {
-    /*background-image: url("img/workspace.jpg");*/
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -174,9 +171,7 @@ section .work, section .life {
     display: inline-block;
     margin: auto;
 }
-
 .lifestyle, .contact-me {
-    /*background-image: url("img/climb.jpg");*/
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -203,7 +198,6 @@ section .life, section .contacts {
     display: inline-block;
     margin: auto;
 }
-
 ul.flex-container {
     padding: 20px 100px;
     margin: 0;
@@ -218,7 +212,6 @@ ul.flex-container {
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
 }
-
 .flex-item {
   background: #ff3399;
   padding: 5px;
@@ -237,11 +230,6 @@ ul.flex-container {
     display: flex;
     padding: 50px 0;
 }
-/*.get-in-touch, #thanks {*/
-/*    margin: 0 auto;*/
-/*    max-width: 1200px;*/
-/*        padding: 20px 100px;*/
-/*}*/
 .flex-form {
     width: 80%;
     max-width: 1200px;
@@ -297,11 +285,6 @@ ul.flex-container {
     letter-spacing: .09em;
     border-radius: 2px;
 }
-
-#thanks {
-    
-}
-
 footer {
     background-color: transparent;
     box-sizing: border-box;
