@@ -317,12 +317,17 @@ footer i:hover {
 
 @media (max-width: 320px) {
     header {
-        background-position: 0%;
+        background-position: 30% 50%;
+        padding: 0;
     }
-    .front-end-dev {
-        font-size: 15px;
-        line-height: 15px;
-        border-size: 10px;
+    header nav {
+    justify-content: center;
+    }
+    div.front-end-dev, div.work, div.life, div.contacts {
+        font-size: 30px;
+        line-height: 30px;
+        border-width: 7px;
+        letter-spacing: 3px;
     }
     section.about-me {
         flex-direction: column;
