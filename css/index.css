@@ -1,49 +1,3 @@
-/*reset*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/*_____________________________________________*/
-
 html{
     height: 100%;
 }
@@ -112,11 +66,12 @@ header a {
     display: inline-block;
     float: right;
     clear: both;
-
-  top: 50%;
-  transform: translateY(-50%);
+    
+    top: 50%;
+    transform: translateY(-50%);
 }
 section.about-me {
+    align-items: center;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -125,15 +80,7 @@ section.about-me {
     padding: 7% 12%;
     width: 100%;
     list-style: none;
-
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
-  /*-webkit-flex-flow: row wrap;*/
-  justify-content: space-around;
+    justify-content: space-around;
 }
 section .hi {
     font-size: 70px;
@@ -163,7 +110,7 @@ section .my-story {
     width: 100%;
     display: flex;
 }
-section .work, section .life {
+section .work, section .life, section .contacts {
     border-width: 15px;
     border-style: solid;
     border-color: #ff3399;
@@ -190,48 +137,18 @@ section .work, section .life {
     width: 100%;
     display: flex;
 }
-section .life, section .contacts {
-    border-width: 15px;
-    border-style: solid;
-    border-color: #ff3399;
-    background-color: transparent;
-    text-transform: uppercase;
-    color: #ff3399;
-    text-align: center;
-    font-size: 70px;
-    line-height: 100px;
-    letter-spacing: 10px;
-    font-weight: bold;
-    position: relative;
-    display: inline-block;
-    margin: auto;
-}
 ul.flex-container {
-    padding: 20px 100px;
-    margin: 0;
-    list-style: none;
-    
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    
-    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
+    padding: 50px;
+    box-sizing: border-box;
 }
-.flex-item {
-  background: #ff3399;
-  padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin: 30px 0;
-  
-  line-height: 150px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
+ul.flex-container .flex-item {
+    
+}
+img.floriya {
+    max-width: 200px; 
 }
 .form {
     background: none;

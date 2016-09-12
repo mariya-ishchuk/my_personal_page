@@ -1,0 +1,59 @@
+html{
+    height: 100%;
+}
+body {
+    font-family: Open Sans;
+    height: 100%;
+}
+header {
+    height: 50%;
+}
+.floriya-cover {
+    background-image: url("../css/img/f_cover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 92%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+.all-content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 15%;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+.concept {
+    height: auto;
+}
+p {
+    color: #333;
+    line-height: 25px;
+    margin: 0;
+    padding: 10% 0 3% 0;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #7b7b7b, #ccc);
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 1px;
+    width: 100%;
+}
+.img {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 7% 0;
+    position: relative;
+    width: 100%;
+}
+img {
+    width: 100%;
+}
