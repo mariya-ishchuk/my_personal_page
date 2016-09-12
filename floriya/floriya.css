@@ -57,3 +57,32 @@ hr {
 img {
     width: 100%;
 }
+footer {
+    align-items: center;
+    background-color: transparent;
+    box-sizing: border-box;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    padding: 5% 15%;
+    display: flex;
+    flex-flow: row-wrap;
+    justify-content: space-between;
+}
+.nav-item{
+    color: #333;
+    outline: none;
+    text-decoration: none;
+}
+footer i:hover {
+    color: #ff3399;
+}
+.copy {
+    
+}
+.copyright {
+    color: #333;
+    outline: none;
+    text-decoration: underline;
+}
