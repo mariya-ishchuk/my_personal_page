@@ -303,15 +303,6 @@ footer i:hover {
     header {
         padding: 10px;
     }
-    header nav {
-        flex-direction: column;
-    }
-    header .header-container {
-        align-items: flex-start;
-    }
-    a.nav-item {
-        padding-bottom: 10px;
-    }
 }
 @media (max-width: 500px) {
     header {
@@ -323,10 +314,16 @@ footer i:hover {
         border-width: 7px;
         letter-spacing: 3px;
     }
-    section.about-me, section.events, footer  {
+    section.about-me, section.events, footer, header nav  {
         flex-direction: column;
     }
     .thumbnail {
         max-width: 200px;
+    }
+    a.nav-item {
+        padding-bottom: 10px;
+    }
+    header .header-container {
+        align-items: flex-start;
     }
 }
