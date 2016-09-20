@@ -39,6 +39,10 @@ header nav {
 }
 header .nav-item {
     margin-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    height: 35px;
 }
 header .nav-item:hover {
     border-bottom: 1px solid #ff3399;
@@ -372,45 +376,4 @@ footer i:hover {
     color: #333;
     outline: none;
     text-decoration: underline;
-}
-
-@media (max-width: 900px) {
-    section.events {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 760px) {
-    div.front-end-dev, div.work, div.life, div.contacts {
-        font-size: 50px;
-        line-height: 50px;
-        border-width: 8px;
-        letter-spacing: 5px;
-    }
-    header {
-        padding: 10px;
-    }
-}
-@media (max-width: 500px) {
-    header {
-        background-position: 30% 50%;
-    }
-    div.front-end-dev, div.work, div.life, div.contacts {
-        font-size: 30px;
-        line-height: 30px;
-        border-width: 7px;
-        letter-spacing: 3px;
-    }
-    section.about-me, section.events, footer, header nav  {
-        flex-direction: column;
-    }
-    .thumbnail {
-        max-width: 200px;
-    }
-    a.nav-item {
-        padding-bottom: 10px;
-    }
-    header .header-container {
-        align-items: flex-start;
-    }
 }
